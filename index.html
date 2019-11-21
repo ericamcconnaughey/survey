@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  <title>About Me Survey</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron bg-info">
+      <h1>About Me Survey</h1>
+      <p>We appreciate your help in collecting data about our users. Thanks!</p>
+    </div>
+
+    <form class="form" id="user-survey">
+      <div class="form-group">
+        <label for="name">What is your first name?</label>
+        <input id="name" placeholder="First name" type="text" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="food">Select your favorite Thanksgiving food from this list:</label>
+        <select id="food" class="form-control">
+          <option value="turkey">turkey</option>
+          <option value="cranberry sauce">cranberry sauce</option>
+          <option value="gravy">gravy</option>
+          <option value="green beans">green beans</option>
+          <option value="pumpkin pie">pumpkin pie</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="music">What is your preferred type of music?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" class="music" value="rap" checked>
+            Rap
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" class="music" value="country">
+            Country
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" class="music" value="rock">
+            Rock
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="color">What is your favorite color?</label>
+        <input id="color" name="color" class="form-control" type="color">
+      </div>
+
+      <button class="btn btn-info" type="submit">Submit</button>
+    </form>
+
+  </div>
+</body>
+
+</html>
