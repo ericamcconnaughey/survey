@@ -12,10 +12,17 @@ $(document).ready(function() {
     console.log(yourArray);
 
     var newArray = []
+    var str = '<ul>'
     newArray.push(yourArray[1], yourArray[0], yourArray[2]);
     console.log(newArray);
 
-    document.getElementById("results").innerHTML = newArray;
+  newArray.forEach(function(item) {
+    str += '<li>' + item + '</li>';
+  })
+
+  str += '</ul>'
+  
+    document.getElementById("results").innerHTML = str;
     
     event.preventDefault();
   })
