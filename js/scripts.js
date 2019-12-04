@@ -6,8 +6,18 @@ $(document).ready(function() {
     var favMusic = $('input[name="optionsRadios"]').val();
     var favColor = $("#color").val();
 
-    alert("Hello " + firstName + ". I'm glad you also like to eat " + favFood + ". I'm not a huge fan of " + favMusic + " music myself, but I won't judge." + favColor + " is a pretty cool color!");
+    alert("Hello " + firstName + ". I'm glad you also like to eat " + favFood + ". I'm not a huge fan of " + favMusic + " music myself, but I won't judge. " + favColor + " is a pretty cool color!");
+    
+    yourArray = [firstName, favFood, favMusic, favColor];
+    console.log(yourArray);
 
+    var newArray = []
+    newArray.push(yourArray[1], yourArray[0], yourArray[2]);
+    console.log(newArray);
+
+    document.getElementById("results").innerHTML = newArray;
+    
     event.preventDefault();
   })
+  
 })
